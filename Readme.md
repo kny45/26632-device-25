@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Николай Комаров](https://up.htmlacademy.ru/htmlcss/25/user/26632).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
