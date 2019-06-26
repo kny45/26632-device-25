@@ -52,28 +52,35 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-h1, h2, h3 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 700;
-  color: #000000;
-}
 
-h3 {
-  font-size: 47px;
-  line-height: 48px;
+/* общие элементы */
+
+.logo-device:hover svg {
+  opacity: 0.6;
+}
+.logo-device:active svg {
+  opacity: 0.3;
 }
 
 
 /* header */
-.header__logo-device path {
+
+/*
+.header__logo-device svg {
   fill: #000000;
 }
-.header__logo-device:hover path {
+.header__logo-device:hover svg {
   opacity: 0.6;
 }
-.header__logo-device:active path {
+.header__logo-device:active svg {
   opacity: 0.3;
 }
+*/
+.header__logo-device svg {
+  fill: #000000;
+}
+
+
 
 /* main */
 
@@ -141,27 +148,27 @@ h3 {
 
 }
 
-.popular-products-item__link_1::before {
+.popular-products-item__vr::before {
   background-image: url(../img/popular-1.svg);
   background-position: 50% 50%;
 }
-.popular-products-item__link_2::before {
+.popular-products-item__monopod::before {
   background-image: url(../img/popular-2.svg);
   background-position: 50% 100%;
 }
-.popular-products-item__link_3::before {
+.popular-products-item__action-camera::before {
   background-image: url(../img/popular-3.svg);
   background-position: 50% 50%;
 }
-.popular-products-item__link_4::before {
+.popular-products-item__fitness-bracelet::before {
   background-image: url(../img/popular-4.svg);
   background-position: 50% 50%;
 }
-.popular-products-item__link_5::before {
+.popular-products-item__smart-watch::before {
   background-image: url(../img/popular-5.svg);
   background-position: 50% 50%;
 }
-.popular-products-item__link_6::before {
+.popular-products-item__quadcopter::before {
   background-image: url(../img/popular-6.svg);
   background-position: 50% 50%;
 }
@@ -182,7 +189,7 @@ h3 {
   width: 160px;
 }
 
-.popular-products-item-link__header_2 {
+.popular-products-item-link__header--narrow-width {
   width: 120px;
 }
 
@@ -233,36 +240,36 @@ h3 {
   background-position: 50% 50%;
 }
 
-.brands-list-item__link_1 {
-  background-image: url(../img/brand-logo-1.jpg);
+.brands-list-item__link--dji {
+  background-image: url(../img/brand-logo-dji.jpg);
 }
 
-.brands-list-item__link_1:hover {
-  background-image: url(../img/brand-logo-1-hover.jpg);
+.brands-list-item__link--dji:hover {
+  background-image: url(../img/brand-logo-dji-hover.jpg);
 }
 
-.brands-list-item__link_2 {
-  background-image: url(../img/brand-logo-2.jpg);
+.brands-list-item__link--spG {
+  background-image: url(../img/brand-logo-spG.jpg);
 }
 
-.brands-list-item__link_2:hover {
-  background-image: url(../img/brand-logo-2-hover.jpg);
+.brands-list-item__link--spG:hover {
+  background-image: url(../img/brand-logo-spG-hover.jpg);
 }
 
-.brands-list-item__link_3 {
-  background-image: url(../img/brand-logo-3.jpg);
+.brands-list-item__link--GoPro {
+  background-image: url(../img/brand-logo-GoPro.jpg);
 }
 
-.brands-list-item__link_3:hover {
-  background-image: url(../img/brand-logo-3-hover.jpg);
+.brands-list-item__link--GoPro:hover {
+  background-image: url(../img/brand-logo-GoPro-hover.jpg);
 }
 
-.brands-list-item__link_4 {
-  background-image: url(../img/brand-logo-4.jpg);
+.brands-list-item__link--vive {
+  background-image: url(../img/brand-logo-vive.jpg);
 }
 
-.brands-list-item__link_4:hover {
-  background-image: url(../img/brand-logo-4-hover.jpg);
+.brands-list-item__link--vive:hover {
+  background-image: url(../img/brand-logo-vive-hover.jpg);
 }
 
 
@@ -303,7 +310,17 @@ h3 {
   justify-content: space-between;
 }
 
-.about-us__site-line_black {
+.about-us__header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 0.47px;
+}
+
+.about-us__site-line {
   display: block;
   width: 80px;
   height: 7px;
@@ -442,7 +459,7 @@ h3 {
   justify-content: space-between;
 }
 
-.contacts__site-line_black {
+.contacts__site-line {
   display: block;
   width: 80px;
   height: 7px;
@@ -459,6 +476,16 @@ h3 {
   margin: 0;
   padding: 0;
   padding-bottom: 45px;
+}
+
+.contacts__header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 0.47px;
 }
 
 .contacts__content-block-wrapper {
@@ -617,16 +644,16 @@ h3 {
 
 /* добавить иконки и состояния */
 
-.main-footer__navigation-item_cart {
+.main-footer-navigation-item__cart {
   padding-left: 24px;
 }
 
-.main-footer__navigation-item_compare {
+.main-footer-navigation-item__compare {
   padding-left: 20px;
   padding-right: 41px;
 }
 
-.main-footer__navigation-item_user {
+.main-footer-navigation-item__user {
   padding-left: 22px;
   padding-right: 44px;
 }
@@ -743,7 +770,7 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-.main-footer__site-line_color {
+.main-footer__site-line {
   display: block;
   width: 80px;
   height: 7px;
@@ -768,17 +795,24 @@ h3 {
   opacity: 0.3;
 }
 
-.main-footer__logo-device path,
+.main-footer__logo-device svg,
 .main-footer__logo-htmlacademy path{
   fill: #ffc600;
 
 }
-.main-footer__logo-device:hover path,
-.main-footer__logo-htmlacademy:hover path {
+.main-footer__logo-device:hover svg,
+.main-footer__logo-htmlacademy:hover svg {
   opacity: 0.6;
 }
-.main-footer__logo-device:active path,
-.main-footer__logo-htmlacademy:active path {
+.main-footer__logo-device:active svg,
+.main-footer__logo-htmlacademy:active svg {
   opacity: 0.3;
 }
 
+
+
+/* временно скроем попапы */
+.feedback,
+.map {
+  display: none;
+}
