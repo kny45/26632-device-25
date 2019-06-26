@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Подложка для верстки и контуры блоков (временно!) -->
 
@@ -40,22 +40,14 @@
       }
       */
     </style>
-
-
   </head>
+
   <body>
+
     <header class="main-header">
-      <a class="header__logo-device" href="#">
-        <!--
-        <img src="img/device-logo-header.svg" width="163" height="35" alt="Логотип Device">
-        -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
-          <defs>
-              <style>
-                  .cls-1{fill-rule:evenodd}
-              </style>
-          </defs>
-          <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
+      <a class="logo-device header__logo-device" href="#">
+        <svg class="header__logo-device-svg" xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
+          <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
         </svg>
       </a>
       <div>
@@ -74,7 +66,7 @@
       <div>
         <nav class="main-navigation">
           <ul class="navigation-list">
-            <li>Каталог товаров
+            <li><a href="#">Каталог товаров</a>
               <!-- здесь будет выпадающее меню -->
               <ul>
                 <li><a href="#">Виртуальная реальность</a></li>
@@ -92,32 +84,33 @@
         </nav>
       </div>
     </header>
-    <main>
-      <h1>Интернет-магазин гаджетов с оригинальным дизайном - Device</h1>
-      <section> <!-- здесь будет слайдер для избранных товаров -->
-        <h2>Избранные товары</h2>
-        <div>кнопки слайдера<!-- здесь будут кнопки сайдера -->
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
+
+    <main class="main-conteiner">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов с оригинальным дизайном - Device</h1>
+      <section class="main-slider"> <!-- здесь будет слайдер для избранных товаров -->
+        <h2 class="visually-hidden">Избранные товары</h2>
+        <div class="main-slider__slider-buttons-list">кнопки слайдера<!-- здесь будут кнопки сайдера -->
+          <span class="main-slider-button">1</span>
+          <span class="main-slider-button">2</span>
+          <span class="main-slider-button">3</span>
         </div>
-        <ul>
-          <li>
-            <article>
-              <span>01</span>
+        <ul class="main-slider__slider-list">
+          <li class="main-slider-item">
+            <article class="main-slider-item__monopod">
+              <span class="main-slider-item__number-header">01</span>
               <img src="img/slider-1-img.jpg" width="384" height="486" alt="Селфи-палка"> <!-- картинка товара -->
-              <h3>Делай селфи,<br>
+              <h3 class="main-slider-item_header">Делай селфи,<br>
                   как Бен Стиллер!</h3>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a>Подробнее</a>
-              <h4>Основные параметры</h4>
-              <table>
-                <tr>
+              <p class="main-slider-item__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="main-slider-item__button">Подробнее</a>
+              <h4 class="visually-hidden">Основные параметры</h4>
+              <table class="main-slider-item__table">
+                <tr class="main-slider-item-table__value">
                   <td>8,5 м</td>
                   <td>5 кг</td>
                   <td>Карбон</td>
                 </tr>
-                <tr>
+                <tr class="main-slider-item-table__parameter">
                   <td>Длина палки</td>
                   <td>Вес палки</td>
                   <td>Материал</td>
@@ -125,40 +118,40 @@
               </table>
             </article>
           </li>
-          <li>
-            <article>
-              <span>02</span>
+          <li class="main-slider-item">
+            <article class="main-slider-item__fitness-bracelet">
+              <span class="main-slider-item__number-header">02</span>
               <img src="img/slider-2-img.jpg" width="345" height="485" alt="Фитнес-браслет"> <!-- картинка товара -->
-              <h3>Худеем<br>
+              <h3 class="main-slider-item_header">Худеем<br>
                   правильно!</h3>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a>Подробнее</a>
-              <h4>Основные параметры</h4>
-              <table>
-                <tr>
+              <p class="main-slider-item__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="main-slider-item__button">Подробнее</a>
+              <h4 class="visually-hidden">Основные параметры</h4>
+              <table class="main-slider-item__table">
+                <tr class="main-slider-item-table__value">
                   <td>48 часов</td>
                 </tr>
-                <tr>
+                <tr class="main-slider-item-table__parameter">
                   <td>Без подзараядки</td>
                 </tr>
               </table>
             </article>
           </li>
-          <li>
-            <article>
-              <span>03</span>
+          <li class="main-slider-item">
+            <article class="main-slider-item__quadcopter">
+              <span class="main-slider-item__number-header">03</span>
               <img src="img/slider-3-img.jpg" width="526" height="334" alt="Квадракоптер"> <!-- картинка товара -->
-              <h3>Порхает как бабочка,<br>
+              <h3 class="main-slider-item_header">Порхает как бабочка,<br>
                   жалит как пчела!</h3>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a>Подробнее</a>
-              <h4>Основные параметры</h4>
-              <table>
-                <tr>
+              <p class="main-slider-item__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="main-slider-item__button">Подробнее</a>
+              <h4 class="visually-hidden">Основные параметры</h4>
+              <table class="main-slider-item__table">
+                <tr class="main-slider-item-table__value">
                   <td>800 м</td>
-                  <td>50 м<</td>
+                  <td>50 м</td>
                 </tr>
-                <tr>
+                <tr class="main-slider-item-table__parameter">
                   <td>Радиус полета</td>
                   <td>Радиус поражения</td>
                 </tr>
@@ -172,65 +165,65 @@
         <h2 class="visually-hidden">Группы товаров</h2>
           <ul class="popular-products-list">
             <li class="popular-products-list__item">
-              <a class="popular-products-item__link popular-products-item__link_1" href="#">
+              <a class="popular-products-item__link popular-products-item__vr" href="#">
                 <span class="popular-products-item-link__header">Виртуальная реальность</span>
               </a>
             </li>
             <li class="popular-products-list__item">
-              <a class="popular-products-item__link popular-products-item__link_2" href="catalog.html">
-                <span class="popular-products-item-link__header popular-products-item-link__header_2">Моноподы для селфи</span>
+              <a class="popular-products-item__link popular-products-item__monopod" href="catalog.html">
+                <span class="popular-products-item-link__header popular-products-item-link__header--narrow-width">Моноподы для селфи</span>
               </a>
             </li>
             <li class="popular-products-list__item">
-              <a class="popular-products-item__link popular-products-item__link_3" href="#">
+              <a class="popular-products-item__link popular-products-item__action-camera" href="#">
                 <span class="popular-products-item-link__header">Экшн-камеры</span>
               </a>
             </li>
             <li class="popular-products-list__item">
-              <a class="popular-products-item__link popular-products-item__link_4" href="#">
+              <a class="popular-products-item__link popular-products-item__fitness-bracelet" href="#">
                 <span class="popular-products-item-link__header">Фитнес-браслеты</span>
               </a>
             </li>
             <li class="popular-products-list__item">
-              <a class="popular-products-item__link popular-products-item__link_5" href="#">
+              <a class="popular-products-item__link popular-products-item__smart-watch" href="#">
                 <span class="popular-products-item-link__header">Умные часы</span>
               </a>
             </li>
             <li class="popular-products-list__item">
-              <a class="popular-products-item__link popular-products-item__link_6" href="#">
+              <a class="popular-products-item__link popular-products-item__quadcopter" href="#">
                 <span class="popular-products-item-link__header">Квадракоптеры</span>
               </a>
             </li>
           </ul>
       </section>
 
-      <section>
-        <h2>Предоставляемые сервисные услуги</h2> <!-- здесь будет слайдер для сервисных услуг -->
-        <ul> <!-- меню слайдера -->
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
+      <section class="services">
+        <h2 class="visually-hidden">Предоставляемые сервисные услуги</h2> <!-- здесь будет слайдер для сервисных услуг -->
+        <ul class="services__menu-list"> <!-- меню слайдера -->
+          <li class="services-menu__item">Доставка</li>
+          <li class="services-menu__item">Гарантия</li>
+          <li class="services-menu__item">Кредит</li>
         </ul>
-        <ul>
-          <li>слайд_01
-            <article>
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              иконка <!-- здесь будет иконка -->
+        <ul class="services__list">
+          <li class="services-list__item">
+            <article class="services-item__delivery">
+              <h3 class="services-item__header">Доставка</h3>
+              <p class="services-item__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <img src="img/services-delivery.svg" width="136" height="164">
             </article>
           </li>
-          <li>слайд_02
-            <article>
-              <h3>Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              иконка <!-- здесь будет иконка -->
+          <li class="services-list__item">
+            <article class="services-item__warranty">
+              <h3 class="services-item__header">Гарантия</h3>
+              <p class="services-item__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <img src="img/services-warranty.svg" width="171" height="194">
             </article>
           </li>
-          <li>слайд_03
-            <article>
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-              иконка <!-- здесь будет иконка -->
+          <li class="services-list__item">
+            <article class="services-item__credit">
+              <h3 class="services-item__header">Кредит</h3>
+              <p class="services-item__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              <img src="img/services-credit.svg" width="156" height="186">
             </article>
           </li>
         </ul>
@@ -239,10 +232,10 @@
       <section class="brands">
         <h2 class="visually-hidden">Представленные бренды</h2>
         <ul class="brands__list">
-          <li class="brands-list__item"><a class="brands-list-item__link brands-list-item__link_1" href="#" aria-label="Ссылка на сайт dji"></a></li>
-          <li class="brands-list__item"><a class="brands-list-item__link brands-list-item__link_2" href="#" aria-label="Ссылка на сайт spG"></a></li>
-          <li class="brands-list__item"><a class="brands-list-item__link brands-list-item__link_3" href="#" aria-label="Ссылка на сайт goPro"></a></li>
-          <li class="brands-list__item"><a class="brands-list-item__link brands-list-item__link_4" href="#" aria-label="Ссылка на сайт vive"></a></li>
+          <li class="brands-list__item"><a class="brands-list-item__link brands-list-item__link--dji" href="#" aria-label="Ссылка на сайт dji"></a></li>
+          <li class="brands-list__item"><a class="brands-list-item__link brands-list-item__link--spG" href="#" aria-label="Ссылка на сайт spG"></a></li>
+          <li class="brands-list__item"><a class="brands-list-item__link brands-list-item__link--GoPro" href="#" aria-label="Ссылка на сайт goPro"></a></li>
+          <li class="brands-list__item"><a class="brands-list-item__link brands-list-item__link--vive" href="#" aria-label="Ссылка на сайт vive"></a></li>
         </ul>
       </section>
 
@@ -251,7 +244,7 @@
           <h2 class="visually-hidden">Информация о компании</h2>
           <article class="about-us">
             <div class="about-us__wrapper-content">
-              <span class="about-us__site-line_black">
+              <span class="about-us__site-line">
                 <svg width="80" height="7" viewbox="0 0 80 7" fill="#000000">
                   <rect width="80" height="7" x="0" y="0"/>
                 </svg>
@@ -275,7 +268,7 @@
           </article>
           <article class="contacts">
             <div class="contacts__wrapper-content">
-              <span class="contacts__site-line_black">
+              <span class="contacts__site-line">
                 <svg width="80" height="7" viewbox="0 0 80 7" fill="#000000">
                   <rect width="80" height="7" x="0" y="0"/>
                 </svg>
@@ -293,28 +286,28 @@
         </div>
       </section>
 
-      <section> <!-- форма обратной связи  -->
-        <form>
-          <label>
+      <section class="feedback"> <!-- форма обратной связи  -->
+        <form class="feedback-form">
+          <label class="feedback-form__label">
             Ваше имя
-            <input type="text">
+            <input class="feedback-form__input" type="text">
           </label>
-          <label>
+          <label class="feedback-form__label">
             Ваш e-mail
-            <input type="text">
+            <input class="feedback-form__input" type="text">
           </label>
-          <label>
-            Текст письма
-            <input type="text">
-          </label>
-          <button type="submit">Отправить</button>
+          <div class="feedback-form__label">
+            <p>Текст письма</p>
+          </div>
+          <textarea class="feedback-form__input" row="5"></textarea>
+          <button class="feedback-form__submit" type="submit">Отправить</button>
         </form>
       </section>
 
-      <section>
-        <form>
-          карта
-          <button type="button">X</button>
+      <section class="map">
+        <form class="map-form">
+          <iframe class="map-form__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473704!2d37.5274293160995!3d55.68703400452975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1561579184111!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <button class="map-form__close" type="button">X</button>
         </form>
       </section>
     </main>
@@ -322,23 +315,18 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__navigation-wrapper">
-          <a class="main-footer__logo-device" href="#">
+          <a class="logo-device main-footer__logo-device" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
-            <defs>
-              <style>
-                .cls-1{fill-rule:evenodd}
-              </style>
-            </defs>
-            <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
+              <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
             </svg>
           </a>
           <div class="main-footer__navigation-link-wrapper">
             <ul class="main-footer__user-links">
-              <li><a class="main-footer__navigation-item main-footer__navigation-item_user" href="#">Войти</a></li>
+              <li><a class="main-footer__navigation-item main-footer-navigation-item__user" href="#">Войти</a></li>
             </ul>
             <ul class="main-footer__goods-action">
-              <li><a class="main-footer__navigation-item main-footer__navigation-item_compare" href="#">Сравнить</a></li>
-              <li><a class="main-footer__navigation-item main-footer__navigation-item_cart" href="#">Корзина</a></li>
+              <li><a class="main-footer__navigation-item main-footer-navigation-item__compare" href="#">Сравнить</a></li>
+              <li><a class="main-footer__navigation-item main-footer-navigation-item__cart" href="#">Корзина</a></li>
             </ul>
           </div>
         </div>
@@ -357,7 +345,7 @@
         </div>
         <div class="main-footer__footer-wrapper">
           <div class="main-footer__footer-inner-wrapper">
-            <span class="main-footer__site-line_color">
+            <span class="main-footer__site-line">
               <svg width="80" height="7" viewbox="0 0 80 7" fill="#ffc600">
                 <rect width="80" height="7" x="0" y="0"/>
               </svg>
