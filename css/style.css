@@ -76,13 +76,209 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 */
+
+
+.main-header {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.main-header__wrapper {
+  width: 1160px;
+
+  height: 300px; /* временно! */
+
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: #f7e296;
+
+  position: relative;
+}
+
+.header__logo-device {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+
+}
+
 .header__logo-device svg {
   fill: #000000;
+}
+
+.main-header__top-menu {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  width: 1040px;
+
+  justify-content: space-between;
+}
+
+.main-header__search {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 36px;
+}
+
+.main-header__navigation-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  width: 500px;
+
+  justify-content: space-between;
+}
+
+.main-header__user-navigation,
+.main-header__goods-action {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-header__navigation-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+
+  text-decoration: none;
+
+  color: #000000;
+}
+
+/* добавить иконки и состояния */
+
+.main-header-navigation-item__cart {
+  padding-left: 24px;
+}
+
+.main-header-navigation-item__compare {
+  padding-left: 20px;
+  padding-right: 41px;
+}
+
+.main-header-navigation-item__user {
+  padding-left: 22px;
+  padding-right: 44px;
+}
+
+
+.main-navigation__list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+
+  width: 1040px;
+
+  list-style: none;
+
+  justify-content: space-between;
+
+}
+
+.navigation-list__services-links {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 500px;
+}
+
+.main-navigation__header-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  color: #000000;
+}
+
+.main-navigation__header-link--warranty {
+  display: block;
+  width: 225px;
+}
+
+.main-navigation__header-link--delivery {
+  display: block;
+  width: 160px;
+}
+
+.main-navigation__header-link--contacts {
+  display: block;
+  width: 115px;
+}
+
+.main-navigation__popup-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 29px;
+
+  list-style: none;
+
+  justify-content: flex-start;
+}
+
+.main-navigation-popup-list__column-1 {
+  width: 235px;
+}
+
+.main-navigation-popup-list__column-2 {
+  width: 195px;
+}
+
+.main-navigation-popup-list__column-3 {
+  width: 110px;
+}
+
+
+.main-navigation-popup__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+
+  text-decoration: none;
+
+  color: #000000;
 }
 
 
 
 /* main */
+
+
+/* main-sliders */
+
 
 
 /* popular products*/
@@ -148,27 +344,27 @@ input[type="radio"].visually-hidden {
 
 }
 
-.popular-products-item__vr::before {
+.popular-products-item__link--vr::before {
   background-image: url(../img/popular-1.svg);
   background-position: 50% 50%;
 }
-.popular-products-item__monopod::before {
+.popular-products-item__link--monopod::before {
   background-image: url(../img/popular-2.svg);
   background-position: 50% 100%;
 }
-.popular-products-item__action-camera::before {
+.popular-products-item__link--action-camera::before {
   background-image: url(../img/popular-3.svg);
   background-position: 50% 50%;
 }
-.popular-products-item__fitness-bracelet::before {
+.popular-products-item__link--fitness-bracelet::before {
   background-image: url(../img/popular-4.svg);
   background-position: 50% 50%;
 }
-.popular-products-item__smart-watch::before {
+.popular-products-item__link--smart-watch::before {
   background-image: url(../img/popular-5.svg);
   background-position: 50% 50%;
 }
-.popular-products-item__quadcopter::before {
+.popular-products-item__link--quadcopter::before {
   background-image: url(../img/popular-6.svg);
   background-position: 50% 50%;
 }
