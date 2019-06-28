@@ -238,22 +238,29 @@ input[type="radio"].visually-hidden {
   padding-top: 29px;
   padding-bottom: 29px;
 
+  flex-wrap: wrap;
+
   list-style: none;
 
   justify-content: flex-start;
 }
 
-.main-navigation-popup-list__column-1 {
+.main-navigation__popup-list li:first-child,
+.main-navigation__popup-list li:nth-child(4) {
   width: 235px;
 }
 
-.main-navigation-popup-list__column-2 {
+.main-navigation__popup-list li:nth-child(2) {
   width: 195px;
 }
 
-.main-navigation-popup-list__column-3 {
+.main-navigation__popup-list li:nth-child(3) {
   width: 110px;
 }
+.main-navigation__popup-list li:nth-child(5) {
+  width: 300px;
+}
+
 
 
 .main-navigation-popup__item {
@@ -279,7 +286,196 @@ input[type="radio"].visually-hidden {
 
 /* main-sliders */
 
+.main-slider {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
 
+.main-slider__slider-list {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-slider-item {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.main-slider-item__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 560px;
+}
+
+.slider-item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 75px;
+  width: 560px;
+
+  position: relative;
+}
+
+
+.main-slider-item__number-header {
+
+  position: absolute;
+  top: 0;
+  right: 50px;
+  z-index: -1;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 179px;
+  line-height: 179px;
+  font-weight: 700;
+  letter-spacing: 1.79px;
+
+  color: orange; /* изменить цвет! */
+
+}
+
+.main-slider-item__header {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+  padding-bottom: 23px;
+  width: 397px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: 0.47px;
+
+  color: #000000;
+}
+
+.main-slider-item__header--quadcopter {
+  width: 500px;
+}
+
+.main-slider-item__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 45px;
+  width: 485px;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+.main-slider-item__button {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+
+  width: 220px;
+  height: 40px;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  text-decoration: none;
+
+  position: relative;
+  z-index: 1;
+}
+
+.main-slider-item__button::after {
+  content: "";
+
+  width: 220px;
+  height: 8px;
+  background-color: #f0c52e;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  z-index: -1;
+}
+
+.main-slider-item__button:hover::after {
+  transition: transform 0.25s ease;
+  transform: scaleY(5);
+}
+
+.main-slider-item__button:active {
+  width: 220px;
+  height: 40px;
+  background-color: #f0c52e;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.main-slider-item-table__value td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  line-height: 48px;
+
+  letter-spacing: 0.36px;
+  text-decoration: none;
+}
+
+.main-slider-item-table__value td:first-child {
+  width: 160px;
+  height: 50px;
+}
+.main-slider-item-table__value td:nth-child(2) {
+  width: 140px;
+}
+.main-slider-item-table__value td:nth-child(3) {
+  width: 160px;
+}
+
+.main-slider-item-table__parameter td {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.13px;
+  color: #000000;
+}
+
+
+/* services */
+
+.services {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 /* popular products*/
 
@@ -710,6 +906,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
 .contacts__btn-write-to-us {
   display: flex;
   margin: 0;
