@@ -175,10 +175,17 @@
           </li>
         </ul>
 
-        <div class="main-slider__slider-buttons-list">кнопки слайдера<!-- здесь будут кнопки сайдера -->
-          <span class="main-slider-button">1</span>
-          <span class="main-slider-button">2</span>
-          <span class="main-slider-button">3</span>
+<!--
+        class="visually-hidden" для radio
+-->
+
+        <input type="radio" id="main-slider-monopod" name="main-slider-toggle" checked>
+        <input type="radio" id="main-slider-fitness-bracelet" name="main-slider-toggle">
+        <input type="radio" id="main-slider-quadcopter" name="main-slider-toggle">
+        <div class="main-slider__slider-controls">
+          <label class="main-slider-controls__item main-slider-controls__item--monopod" for="main-slider-monopod">Монопод</label>
+          <label class="main-slider-controls__item main-slider-controls__item--fitness-bracelet" for="main-slider-fitness-bracelet">Фитнес-браслет</label>
+          <label class="main-slider-controls__item main-slider-controls__item--quadcopter" for="main-slider-quadcopter">Квадракоптер</label>
         </div>
 
       </section>
@@ -221,34 +228,54 @@
 
       <section class="services">
         <h2 class="visually-hidden">Предоставляемые сервисные услуги</h2> <!-- здесь будет слайдер для сервисных услуг -->
-        <ul class="services__menu-list"> <!-- меню слайдера -->
-          <li class="services-menu__item">Доставка</li>
-          <li class="services-menu__item">Гарантия</li>
-          <li class="services-menu__item">Кредит</li>
-        </ul>
+
+        <div class="services__slider-control">
+          <!-- меню слайдера -->
+<!--
+        class="visually-hidden" для radio
+-->
+          <div class="services__radio-wrapper"> <!-- временная обертка -->
+            <input type="radio" id="service-slider-delivery" name="service-slider-toggle" checked>
+            <input type="radio" id="service-slider-warranty" name="service-slider-toggle">
+            <input type="radio" id="service-slider-credit" name="service-slider-toggle">
+          </div>
+          <div class="service-slider__slider-controls">
+            <div class="services-slider-control-item__wrapper--delivery">
+              <label class="service-slider-controls__item service-slider-controls__item--delivery" for="service-slider-delivery">Доставка</label>
+            </div>
+            <div class="services-slider-control-item__wrapper--warranty">
+              <label class="service-slider-controls__item service-slider-controls__item--warranty" for="service-slider-warranty">Гарантия</label>
+            </div>
+            <div class="services-slider-control-item__wrapper--credit">
+              <label class="service-slider-controls__item service-slider-controls__item--credit" for="service-slider-credit">Кредит</label>
+            </div>
+          </div>
+        </div>
+
         <ul class="services__list">
-          <li class="services-list__item">
-            <article class="services-item__delivery">
+          <li class="services-list-item__wrapper">
+            <article class="services__item">
               <h3 class="services-item__header">Доставка</h3>
               <p class="services-item__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              <img src="img/services-delivery.svg" width="136" height="164">
+              <img class="service-item__icon" src="img/services-delivery.svg" width="136" height="164">
             </article>
           </li>
-          <li class="services-list__item">
-            <article class="services-item__warranty">
+          <li class="services-list-item__wrapper">
+            <article class="services__item">
               <h3 class="services-item__header">Гарантия</h3>
               <p class="services-item__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              <img src="img/services-warranty.svg" width="171" height="194">
+              <img class="service-item__icon" src="img/services-warranty.svg" width="171" height="194">
             </article>
           </li>
-          <li class="services-list__item">
-            <article class="services-item__credit">
+          <li class="services-list-item__wrapper">
+            <article class="services__item">
               <h3 class="services-item__header">Кредит</h3>
               <p class="services-item__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-              <img src="img/services-credit.svg" width="156" height="186">
+              <img class="service-item__icon" src="img/services-credit.svg" width="156" height="186">
             </article>
           </li>
         </ul>
+
       </section>
 
       <section class="brands">
