@@ -290,6 +290,8 @@ input[type="radio"].visually-hidden {
   width: 1440px;
   margin: 0 auto;
   padding: 0;
+
+  position: relative;
 }
 
 .main-slider__slider-list {
@@ -468,14 +470,71 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+/* slider control */
 
-/* services */
+.main-slider__slider-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.services {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0;
+  width: 80px;
+  height: 12px;
+
+  position: absolute;
+  right: 220px;
+  top: 340px;
+  z-index: 10;
+
+  font-size: 0;
 }
+
+.main-slider-controls__item {
+  position: relative;
+
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #000000;
+}
+
+.main-slider-item__wrapper {
+  display: none;
+}
+
+#main-slider-monopod:checked ~ .main-slider__slider-list .main-slider-item__wrapper:nth-child(1) {
+  display: block;
+}
+#main-slider-fitness-bracelet:checked ~ .main-slider__slider-list .main-slider-item__wrapper:nth-child(2) {
+  display: block;
+}
+#main-slider-quadcopter:checked ~ .main-slider__slider-list .main-slider-item__wrapper:nth-child(3) {
+  display: block;
+}
+
+#main-slider-monopod:checked ~ .main-slider__slider-controls .main-slider-controls__item--monopod::before,
+#main-slider-fitness-bracelet:checked ~ .main-slider__slider-controls .main-slider-controls__item--fitness-bracelet::before,
+#main-slider-quadcopter:checked ~ .main-slider__slider-controls .main-slider-controls__item--quadcopter::before
+{
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+/* --- */
 
 /* popular products*/
 
@@ -586,6 +645,219 @@ input[type="radio"].visually-hidden {
 }
 
 
+/* services */
+
+.services {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+
+  background-color: #e5e5e5;
+
+  position: relative;
+}
+
+.services__radio-wrapper {
+  position: absolute;
+  top: -50px;
+} /* временно для радио-кнопок */
+
+.services__slider-control {
+  margin: 0;
+  padding: 0;
+  padding-left: 140px;
+  padding-top: 80px;
+  width: 420px;
+}
+
+
+/* services controls */
+
+.service-slider__slider-controls {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  height: 165px;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.services-slider-control-item__wrapper--delivery,
+.services-slider-control-item__wrapper--warranty,
+.services-slider-control-item__wrapper--credit {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 280px;
+}
+
+.service-slider-controls__item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  width: 160px;
+  height: 40px;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  text-decoration: none;
+
+  position: relative;
+  z-index: 1;
+}
+
+.service-slider-controls__item::after {
+  content: "";
+
+  width: 160px;
+  height: 8px;
+  background-color: #f0c52e;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  z-index: -1;
+}
+
+.service-slider-controls__item:hover::after {
+  transition: transform 0.25s ease;
+  transform: scaleY(5);
+}
+
+.service-slider-controls__item:active::after {
+  content: "";
+
+  width: 160px;
+  height: 8px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  z-index: -1;
+}
+
+.service-slider-controls__item:active {
+  width: 160px;
+  height: 40px;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  color: #f7e184;
+
+  position: relative;
+  z-index: 1;
+}
+
+/*
+#service-slider-delivery:checked ~ .services-slider-control-item__wrapper--delivery {
+  width: 280px;
+  height: 40px;
+
+  color: #f7e184;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 1;
+}
+*/
+
+
+.services__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 1020px;
+}
+
+.services-list-item__wrapper {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
+  padding-left: 120px;
+  padding-bottom: 150px;
+
+  width: 900px;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+}
+
+.services-item__header {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+  width: 250px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+}
+
+.services-item__text {
+  margin: 0;
+  padding: 0;
+  width: 450px;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  color: #464646;
+}
+
+.service-item__icon {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+}
+
+/* временно скроем два блока в сервисе */
+.services-list-item__wrapper:nth-child(2),
+.services-list-item__wrapper:nth-child(3) {
+  display: none;
+}
+
+
+
+/* --- */
+
 /* brands list */
 
 .brands {
@@ -672,7 +944,7 @@ input[type="radio"].visually-hidden {
   width: 1440px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 62px;
+  padding-bottom: 82px;
 }
 
 .about-company__wrapper {
@@ -999,7 +1271,7 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .main-footer__navigation-link-wrapper {
@@ -1027,7 +1299,8 @@ input[type="radio"].visually-hidden {
 
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
   font-weight: 400;
 
   text-decoration: none;
@@ -1061,7 +1334,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
   width: 1160px;
 }
 
@@ -1102,7 +1375,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   margin: 0;
   padding: 0;
-  width: 424px;
+  width: 450px;
 
   list-style: none;
 
@@ -1116,6 +1389,10 @@ input[type="radio"].visually-hidden {
 /* добавить события */
 
 .main-footer-services-list__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 700;
   color: #ffffff;
