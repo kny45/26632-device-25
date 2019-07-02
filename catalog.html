@@ -99,122 +99,164 @@
     <main class="inner-page-container">
 
       <section class="inner-page-header">
-        <h1 class="inner-page-header__header">Моноподы для селфи</h1>
-        <ul class="breadcrumbs"><!-- хлебные крошки -->
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a>Моноподы для селфи</a></li>
-      </ul>
+        <div class="inner-page-header__wrapper">
+          <h1 class="inner-page-header__header">Моноподы для селфи</h1>
+          <ul class="inner-page-header__breadcrumbs-list"><!-- хлебные крошки -->
+            <li class="inner-page-header__breadcrumbs-item"><a class="inner-page-header__breadcrumbs-link" href="index.html">Главная</a></li>
+            <li class="inner-page-header__breadcrumbs-item"><a class="inner-page-header__breadcrumbs-link" href="#">Каталог товаров</a></li>
+            <li class="inner-page-header__breadcrumbs-item"><a class="inner-page-header__breadcrumbs-link">Моноподы для селфи</a></li>
+          </ul>
+        </div>
       </section>
 
-      <aside class="search-filter"> <!-- панель фильтров -->
-        <h2 class="search-filter__header">Фильтр</h2>
-        <form class="search-filter__form">
-          <h3 class="search-filter-form__header">Стоимость</h3>
-          <div class="search-filter-form__price-slider">
-            <!--
-              здесь будет слайдер для цены
-            -->
+      <div class="catalog-wrapper">
+
+        <aside class="search-filter"> <!-- панель фильтров -->
+          <div class="search-filter__header-wrapper">
+            <h2 class="search-filter__header">Фильтр:</h2>
           </div>
-          <h3 class="search-filter-form__header">Цвет</h3>
-          <label>
-            <input type="checkbox">
-            Черный
-          </label>
-          <label>
-            <input type="checkbox">
-            Белый
-          </label>
-          <label>
-            <input type="checkbox">
-            Синий
-          </label>
-          <label>
-            <input type="checkbox">
-            Красный
-          </label>
-          <label>
-            <input type="checkbox">
-            Розовый
-          </label>
-          <h3 class="search-filter-form__header">Bluetooth</h3>
-          <label class="search-filter-form__radio">
-            <input type="radio" name="search-filter-form__bluetooth" value="bluetooth-yes" checked>Есть
-          </label>
-          <label class="search-filter-form__radio">
-            <input type="radio" name="search-filter-form__bluetooth" value="bluetooth-no">Нет
-          </label>
-          <button type="submit">Показать</button>
-        </form>
-      </aside>
+          <form class="search-filter__form">
+            <span class="search-filter__head-line-price">
+              <svg width="200" height="2" viewbox="0 0 200 2" fill="#000000">
+                <rect width="200" height="2" x="0" y="0"/>
+              </svg>
+            </span>
+            <h3 class="search-filter__form-header-price">Стоимость</h3>
+            <div class="search-filter__form-price-slider">
+              здесь будет слайдер для цены - временно
+              <!--
+                здесь будет слайдер для цены
+              -->
+            </div>
+            <span class="search-filter__head-line-color">
+              <svg width="200" height="2" viewbox="0 0 200 2" fill="#000000">
+                <rect width="200" height="2" x="0" y="0"/>
+              </svg>
+            </span>
+            <h3 class="search-filter__form-header-color">Цвет</h3>
+            <label class="search-filter__color-item">
+              <input type="checkbox" checked>
+              Черный
+            </label>
+            <label class="search-filter__color-item">
+              <input type="checkbox">
+              Белый
+            </label>
+            <label class="search-filter__color-item">
+              <input type="checkbox" checked>
+              Синий
+            </label>
+            <label class="search-filter__color-item">
+              <input type="checkbox" checked>
+              Красный
+            </label>
+            <label class="search-filter__form-radio--last">
+              <input type="checkbox">
+              Розовый
+            </label>
+            <span class="search-filter__head-line-bluetooth">
+              <svg width="200" height="2" viewbox="0 0 200 2" fill="#000000">
+                <rect width="200" height="2" x="0" y="0"/>
+              </svg>
+            </span>
+            <h3 class="search-filter__form-header-bluetooth">Bluetooth</h3>
+            <label class="search-filter__form-radio">
+              <input type="radio" name="search-filter-form__bluetooth" value="bluetooth-yes" checked>Есть
+            </label>
+            <label class="search-filter__form-radio--last">
+              <input type="radio" name="search-filter__form-bluetooth" value="bluetooth-no">Нет
+            </label>
+            <button class="search-filter__submit-btn" type="submit">Показать</button>
+          </form>
+        </aside>
 
-      <section class="search-result"> <!-- список найденных товаров -->
-        <h2 class="visually-hidden">Результаты поиска</h2>
-        <h3 class="search-result__header">Сортировка</h3>
-        <ul class="search-result__type-list">
-          <li><a class="search-result-type__item" href="#">По цене</a></li>
-          <li><a class="search-result-type__item" href="#">По типу</a></li>
-          <li><a class="search-result-type__item" href="#">По популярности</a></li>
-        </ul>
-        <ul class="search-result__up-down__list">
-          <li><a class="search-result-up-down__item-up" href="#">up</a></li>
-          <li><a class="search-result-up-down__item-up" href="#">down</a></li>
-        </ul>
-        <h3 class="visually-hidden">Список найденных товаров</h3>
-        <ul class="search-result__goods-list">
-          <li class="search-result-goods__item">
-            <article class="goods-card">
-              <img src="img/item-1-img.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              <h4 class="googs-card__header"><a href="#">Любительская селфи-палка</a></h4>
-              <p class="googs-card__price">500р.</p>
-              <a class="googs-card__button-cart" href="#">В корзину</a>
-              <a class="googs-card__button-compare" href="#">Добавить к сравнению</a>
-            </article>
-          </li>
-          <li class="search-result-goods__item">
-            <article class="goods-card">
-              <img src="img/item-2-img.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              <h4 class="googs-card__header"><a href="#">Профессиональная селфи-палка</a></h4>
-              <p class="googs-card__price">1 500р.</p>
-              <a class="googs-card__button-cart" href="#">В корзину</a>
-              <a class="googs-card__button-compare" href="#">Добавить к сравнению</a>
-            </article>
-          </li>
-          <li>
-            <article class="goods-card">
-              <img src="img/item-3-img.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <h4 class="googs-card__header"><a href="#">Непотопляемая селфи-палка</a></h4>
-              <p class="googs-card__price">2 500р.</p>
-              <a class="googs-card__button-cart" href="#">В корзину</a>
-              <a class="googs-card__button-compare" href="#">Добавить к сравнению</a>
-            </article>
-          </li>
-          <li>
-            <article class="goods-card">
-              <img src="img/item-4-img.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
-              <h4 class="googs-card__header"><a href="#">Селфи-палка "Следуй за мной</a>"</h4>
-              <p class="googs-card__price">4 900р.</p>
-              <a class="googs-card__button-cart" href="#">В корзину</a>
-              <a class="googs-card__button-compare" href="#">Добавить к сравнению</a>
-            </article>
-          </li>
-        </ul>
-        <h3 class="visually-hidden">Навигация по страницам</h3>
-        <ul class="search-result__page-navigation">
-          <li class="search-result-page-navigation_item"><a href="#">Назад</a></li>
-          <li class="search-result-page-navigation_item"><a href="#">1</a></li>
-          <li class="search-result-page-navigation_item"><a href="#">2</a></li>
-          <li class="search-result-page-navigation_item"><a href="#">3</a></li>
-          <li class="search-result-page-navigation_item"><a href="#">Вперед</a></li>
-        </ul>
-      </section>
+        <section class="search-result"> <!-- список найденных товаров -->
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <div class="search-result__header-wrapper">
+            <h3 class="search-result__header">Сортировка:</h3>
+            <div class="search-result__sort-wrapper">
+              <ul class="search-result__sort-type-list">
+                <li class="search-result__sort-type-item"><a class="search-result__sort-type-link search-result__sort-type-link--current" href="#">По цене</a></li>
+                <li class="search-result__sort-type-item"><a class="search-result__sort-type-link" href="#">По типу</a></li>
+                <li class="search-result__sort-type-item"><a class="search-result__sort-type-link" href="#">По популярности</a></li>
+              </ul>
+              <ul class="search-result__up-down-list">
+                <li class="search-result__up-down-item">
+                  <a class="search-result__up-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+                      <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="search-result__up-down-item">
+                  <a class="search-result__down-link search-result__up-down-link--current" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
+                      <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="visually-hidden">Список найденных товаров</h3>
+          <ul class="search-result__goods-list">
+            <li class="search-result__goods-item">
+              <article class="search-result__goods-card">
+                <img src="img/item-1-img.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <h4 class="search-result__googs-card-header"><a href="#">Любительская селфи-палка</a></h4>
+                <p class="search-result__googs-card-price">500р.</p>
+                <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
+                <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+              </article>
+            </li>
+            <li class="search-result-goods__item">
+              <article class="search-result__goods-card">
+                <img src="img/item-2-img.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <h4 class="search-result__googs-card-header"><a href="#">Профессиональная селфи-палка</a></h4>
+                <p class="search-result__googs-card-price">1 500р.</p>
+                <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
+                <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+              </article>
+            </li>
+            <li>
+              <article class="search-result__goods-card">
+                <img src="img/item-3-img.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <h4 class="search-result__googs-card-header"><a href="#">Непотопляемая селфи-палка</a></h4>
+                <p class="search-result__googs-card-price">2 500р.</p>
+                <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
+                <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+              </article>
+            </li>
+            <li>
+              <article class="search-result__goods-card">
+                <img src="img/item-4-img.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
+                <h4 class="search-result__googs-card-header"><a href="#">Селфи-палка "Следуй за мной</a>"</h4>
+                <p class="search-result__googs-card-price">4 900р.</p>
+                <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
+                <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+              </article>
+            </li>
+          </ul>
+
+          <h3 class="visually-hidden">Навигация по страницам</h3>
+          <ul class="search-result__page-navigation">
+            <li class="search-result__page-navigation-item"><a href="#">Назад</a></li>
+            <li class="search-result__page-navigation-item"><a href="#">1</a></li>
+            <li class="search-result__page-navigation-item"><a href="#">2</a></li>
+            <li class="search-result__page-navigation-item"><a href="#">3</a></li>
+            <li class="search-result__page-navigation-item"><a href="#">Вперед</a></li>
+          </ul>
+        </section>
+
+      </div>
 
     </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__navigation-wrapper">
-          <a class="logo-device main-footer__logo-device" href="index.html">
+          <a class="main-footer__logo-device logo-device" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
               <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
             </svg>
@@ -232,13 +274,13 @@
         <div class="main-footer__services-wrapper">
           <div class="main-footer__services-inner-wrapper">
             <div class="main-footer__services">
-              <p class="main-footer-services__addres">г. Москва, ул. Строителей, 15</p>
-              <p class="main-footer-services__phone">Тел.: +7 (495) 495-95-95</p>
+              <p class="main-footer__services-addres">г. Москва, ул. Строителей, 15</p>
+              <p class="main-footer__services-phone">Тел.: +7 (495) 495-95-95</p>
             </div>
-            <ul class="main-footer-service__list">
-              <li><a class="main-footer-services-list__item" href="#">Доставка</a></li>
-              <li><a class="main-footer-services-list__item" href="#">Гарантия</a></li>
-              <li><a class="main-footer-services-list__item" href="#">Контакты</a></li>
+            <ul class="main-footer__service-list">
+              <li><a class="main-footer__services-item" href="#">Доставка</a></li>
+              <li><a class="main-footer__services-item" href="#">Гарантия</a></li>
+              <li><a class="main-footer__services-item" href="#">Контакты</a></li>
             </ul>
           </div>
         </div>
