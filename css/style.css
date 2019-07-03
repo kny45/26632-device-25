@@ -1995,10 +1995,95 @@ input[type="radio"].visually-hidden {
 /* добавить состояния */
 
 
+.search-result__goods-list-wrapper {
+  display: block;
+  margin-top: 70px;
+  margin-left: 75px;
+
+  width: 760px;
+}
+
 .search-result__goods-list {
   display: flex;
   flex-wrap: wrap;
 
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  font-size: 0;
+  line-height: 0;
 }
 
+.search-result__goods-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 360px;
+  height: 505px;
+}
+
+.search-result__goods-item:nth-child(2n+1) {
+  margin-left: 0;
+  margin-right: 40px;
+}
+
+.search-result__goods-item:nth-child(2n) {
+  margin: 0;
+  padding: 0;
+}
+
+
+.search-result__page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 75px;
+  margin-bottom: 80px;
+  width: 760px;
+  height: 70px;
+
+  list-style: none;
+
+  background-color: #ebebeb;
+}
+
+.search-result__page-navigation-number-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-result__page-navigation-item--back {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.search-result__page-navigation-item {
+  margin: 0;
+  padding: 0;
+}
+
+.search-result__page-navigation-item--forward {
+  margin: 0;
+  padding: 0;
+  padding-right: 30px;
+}
+
+.search-result__page-navigation-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #000000;
+}
