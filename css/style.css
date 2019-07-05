@@ -2011,9 +2011,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
-
-  font-size: 0;
-  line-height: 0;
 }
 
 .search-result__goods-item {
@@ -2033,6 +2030,145 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
+
+.search-result__goos-cart-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+.search-result__googs-card-header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+}
+
+.search-result__googs-card-header-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.18px;
+
+  color: #000000;
+
+  text-decoration: none;
+}
+
+.search-result__googs-card-price {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+
+  color: #000000;
+}
+
+.search-result__goods-card-img-wrapper {
+  line-height: 0;
+}
+
+
+.search-result__goods-card {
+  position: relative;
+}
+
+.search-result__goods-card-hover {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 360px;
+  height: 380px;
+
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.search-result__googs-card-button-cart {
+  display: flex;
+  margin-top: 180px;
+  margin-bottom: 35px;
+
+  width: 200px;
+  height: 40px;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  text-decoration: none;
+
+  position: relative;
+  z-index: 2;
+}
+
+.search-result__googs-card-button-cart::after {
+  content: "";
+
+  width: 200px;
+  height: 8px;
+  background-color: #f0c52e;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  z-index: -1;
+}
+
+.search-result__googs-card-button-cart:hover::after {
+  transition: transform 0.25s ease;
+  transform: scaleY(5);
+}
+
+.search-result__googs-card-button-cart:active {
+  width: 200px;
+  height: 40px;
+  background-color: #f0c52e;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.search-result__googs-card-button-compare {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 13x;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 0.13px;
+  color: rgba(0, 0, 0, 0.5);
+
+  text-decoration: none;
+}
+
+.search-result__goods-card-img-wrapper:hover .search-result__goods-card-hover {
+  display: flex;
+}
+
 
 
 .search-result__page-navigation {
