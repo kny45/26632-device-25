@@ -16,7 +16,7 @@
       body {
         opacity: 0.5;
       }
-
+      */
       body > * {
         outline: 2px solid blue;
       }
@@ -38,7 +38,12 @@
       body > * > * > * > * > * > * > * {
         outline: 2px solid lightblue;
       }
-      */
+      body > * > * > * > * > * > * > * > *{
+        outline: 1px dotted red;
+      }
+      body > * > * > * > * > * > * > * > * > *{
+        outline: 1px dotted green;
+      }
     </style>
     -->
   </head>
@@ -204,38 +209,62 @@
             <ul class="search-result__goods-list">
               <li class="search-result__goods-item">
                 <article class="search-result__goods-card">
-                  <img src="img/item-1-img.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <h4 class="search-result__googs-card-header"><a href="#">Любительская селфи-палка</a></h4>
-                  <p class="search-result__googs-card-price">500р.</p>
-                  <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
-                  <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+                  <div class="search-result__goods-card-img-wrapper">
+                    <img src="img/item-1-img.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    <div class="search-result__goods-card-hover">
+                      <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
+                      <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                  <div class="search-result__goos-cart-text-wrapper">
+                    <h4 class="search-result__googs-card-header"><a class="search-result__googs-card-header-link" href="#">Любительская селфи-палка</a></h4>
+                    <p class="search-result__googs-card-price">500 руб.</p>
+                  </div>
                 </article>
               </li>
               <li class="search-result__goods-item">
                 <article class="search-result__goods-card">
-                  <img src="img/item-2-img.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  <h4 class="search-result__googs-card-header"><a href="#">Профессиональная селфи-палка</a></h4>
-                  <p class="search-result__googs-card-price">1 500р.</p>
-                  <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
-                  <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+                  <div class="search-result__goods-card-img-wrapper">
+                    <img src="img/item-2-img.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                    <div class="search-result__goods-card-hover">
+                      <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
+                      <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                  <div class="search-result__goos-cart-text-wrapper">
+                    <h4 class="search-result__googs-card-header"><a class="search-result__googs-card-header-link" href="#">Профессиональная селфи-палка</a></h4>
+                    <p class="search-result__googs-card-price">1 500р.</p>
+                  </div>
                 </article>
               </li>
               <li class="search-result__goods-item">
                 <article class="search-result__goods-card">
-                  <img src="img/item-3-img.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  <h4 class="search-result__googs-card-header"><a href="#">Непотопляемая селфи-палка</a></h4>
-                  <p class="search-result__googs-card-price">2 500р.</p>
-                  <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
-                  <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+                  <div class="search-result__goods-card-img-wrapper">
+                    <img src="img/item-3-img.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <div class="search-result__goods-card-hover">
+                      <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
+                      <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                  <div class="search-result__goos-cart-text-wrapper">
+                    <h4 class="search-result__googs-card-header"><a class="search-result__googs-card-header-link" href="#">Непотопляемая селфи-палка</a></h4>
+                    <p class="search-result__googs-card-price">2 500р.</p>
+                  </div>
                 </article>
               </li>
               <li class="search-result__goods-item">
                 <article class="search-result__goods-card">
-                  <img src="img/item-4-img.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
-                  <h4 class="search-result__googs-card-header"><a href="#">Селфи-палка "Следуй за мной</a>"</h4>
-                  <p class="search-result__googs-card-price">4 900р.</p>
-                  <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
-                  <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+                  <div class="search-result__goods-card-img-wrapper">
+                    <img src="img/item-4-img.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
+                    <div class="search-result__goods-card-hover">
+                      <a class="search-result__googs-card-button-cart" href="#">В корзину</a>
+                      <a class="search-result__googs-card-button-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </div>
+                  <div class="search-result__goos-cart-text-wrapper">
+                    <h4 class="search-result__googs-card-header"><a class="search-result__googs-card-header-link" href="#">Селфи-палка "Следуй за мной"</a></h4>
+                    <p class="search-result__googs-card-price">4 900р.</p>
+                  </div>
                 </article>
               </li>
             </ul>
