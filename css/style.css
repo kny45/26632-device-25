@@ -1778,7 +1778,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.14px;
   color: #000000;
 }
-.search-filter__color-item--last {
+.search-filter__color-item-last {
   padding-bottom: 20px;
 }
 
@@ -1821,7 +1821,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.search-filter__form-radio--last {
+.search-filter__form-radio-last {
   padding-bottom: 40px;
 }
 
@@ -2195,7 +2195,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.search-result__page-navigation-item--back {
+.search-result__page-navigation-item-back {
   margin: 0;
   padding: 0;
   padding-left: 30px;
@@ -2206,7 +2206,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.search-result__page-navigation-item--forward {
+.search-result__page-navigation-item-forward {
   margin: 0;
   padding: 0;
   padding-right: 30px;
