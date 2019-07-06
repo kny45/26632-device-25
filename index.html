@@ -46,7 +46,7 @@
       }
 
     </style>
-     -->
+    -->
   </head>
 
   <body>
@@ -65,8 +65,8 @@
             <input class="main-header__search-input" type="text" placeholder="Поиск по сайту">
             <button class="main-header__search-button" type="submit">Найти</button>
             <span class="main-header__search-line">
-              <svg width="441" height="2" viewbox="0 0 441 2" fill="#000000">
-                <rect width="441" height="2" x="0" y="0"/>
+              <svg width="440" height="2" viewbox="0 0 440 2" fill="#000000">
+                <rect width="440" height="2" x="0" y="0"/>
               </svg>
             </span>
           </form>
@@ -83,24 +83,24 @@
 
         <nav class="main-header__site-navigation">
           <ul class="main-header__site-navigation-list">
-            <li><a class="main-header__navigation-header-item" href="#">Каталог товаров</a>
+            <li><a class="main-header__navigation-header-item main-header__navigation-header-item--catalog" href="#">Каталог товаров</a>
               <!-- здесь будет выпадающее меню -->
-              <ul class="main-header__navigation-popup-list">
-
-                <li><a class="main-header__navigation-popup-item" href="#">Виртуальная реальность</a></li>
-                <li><a class="main-header__navigation-popup-item" href="#">Фитнес-браслеты</a></li>
-                <li><a class="main-header__navigation-popup-item" href="#">Квадракоптеры</a></li>
-                <li><a class="main-header__navigation-popup-item" href="catalog.html">Моноподы для селфи</a></li>
-                <li><a class="main-header__navigation-popup-item" href="#">Умные часы</a></li>
-                <li><a class="main-header__navigation-popup-item" href="#">Экшн-камеры</a></li>
-
+              <ul class="main-header__navigation-popup-list-wrapper">
+                <ul class="main-header__navigation-popup-list">
+                  <li><a class="main-header__navigation-popup-item" href="#">Виртуальная реальность</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="#">Фитнес-браслеты</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="#">Квадракоптеры</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="catalog.html">Моноподы для селфи</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="#">Умные часы</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="#">Экшн-камеры</a></li>
+                </ul>
               </ul>
             </li>
-            <div class="main-header__navigation-services-wrapper">
+            <ul class="main-header__navigation-services-wrapper">
               <li><a class="main-header__navigation-header-item main-header__navigation-header-item--delivery" href="#">Доставка</a></li>
               <li><a class="main-header__navigation-header-item main-header__navigation-header-item--warranty" href="#">Гарантия</a></li>
               <li><a class="main-header__navigation-header-item main-header__navigation-header-item--contacts" href="#">Контакты</a></li>
-            </div>
+            </ul>
           </ul>
         </nav>
 
@@ -112,6 +112,12 @@
 
       <section class="main-slider"> <!-- здесь будет слайдер для избранных товаров -->
         <h2 class="visually-hidden">Избранные товары</h2>
+
+        <span class="main-slider__under-mask">
+          <svg width="1160" height="120" viewbox="0 0 1160 120" fill="#f7e296">
+            <rect width="1160" height="120" x="0" y="0"/>
+          </svg>
+        </span>
 
         <!-- управление слайдером товаров -->
         <input class="visually-hidden" type="radio" id="main-slider-monopod" name="main-slider-toggle" checked>
@@ -127,7 +133,7 @@
           <li class="main-slider__item-wrapper">
             <article class="main-slider__item">
               <div class="main-slider__item-img">
-                <img src="img/slider-1-img.jpg" width="384" height="486" alt="Селфи-палка"> <!-- картинка товара -->
+                <img src="img/slider-1-png.png" width="384" height="486" alt="Селфи-палка"> <!-- картинка товара -->
               </div>
               <div class="main-slider__item-content">
                 <span class="main-slider__item-number-header">01</span>
@@ -153,7 +159,7 @@
           <li class="main-slider__item-wrapper">
             <article class="main-slider__item">
               <div class="main-slider__item-img">
-               <img src="img/slider-2-img.jpg" width="345" height="485" alt="Фитнес-браслет"> <!-- картинка товара -->
+               <img src="img/slider-2-png.png" width="345" height="485" alt="Фитнес-браслет"> <!-- картинка товара -->
               </div>
               <div class="main-slider__item-content">
                 <span class="main-slider__item-number-header">02</span>
@@ -175,8 +181,8 @@
           </li>
           <li class="main-slider__item-wrapper">
             <article class="main-slider__item">
-              <div class="main-slider__item-img">
-                <img src="img/slider-3-img.jpg" width="526" height="334" alt="Квадракоптер"> <!-- картинка товара -->
+              <div class="main-slider__item-img main-slider__item-img--quadcopter">
+                <img src="img/slider-3-png.png" width="526" height="334" alt="Квадракоптер"> <!-- картинка товара -->
               </div>
               <div class="main-slider__item-content">
                 <span class="main-slider__item-number-header">03</span>
