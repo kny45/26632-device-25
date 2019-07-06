@@ -64,8 +64,8 @@
             <input class="main-header__search-input" type="text" placeholder="Поиск по сайту">
             <button class="main-header__search-button" type="submit">Найти</button>
             <span class="main-header__search-line">
-              <svg width="441" height="2" viewbox="0 0 441 2" fill="#000000">
-                <rect width="441" height="2" x="0" y="0"/>
+              <svg width="440" height="2" viewbox="0 0 440 2" fill="#000000">
+                <rect width="440" height="2" x="0" y="0"/>
               </svg>
             </span>
           </form>
@@ -82,24 +82,24 @@
 
         <nav class="main-header__site-navigation">
           <ul class="main-header__site-navigation-list">
-            <li><a class="main-header__navigation-header-item" href="#">Каталог товаров</a>
+            <li><a class="main-header__navigation-header-item main-header__navigation-header-item--catalog" href="#">Каталог товаров</a>
               <!-- здесь будет выпадающее меню -->
-              <ul class="main-header__navigation-popup-list">
-
-                <li><a class="main-header__navigation-popup-item" href="#">Виртуальная реальность</a></li>
-                <li><a class="main-header__navigation-popup-item" href="#">Фитнес-браслеты</a></li>
-                <li><a class="main-header__navigation-popup-item" href="#">Квадракоптеры</a></li>
-                <li><a class="main-header__navigation-popup-item">Моноподы для селфи</a></li>
-                <li><a class="main-header__navigation-popup-item" href="#">Умные часы</a></li>
-                <li><a class="main-header__navigation-popup-item" href="#">Экшн-камеры</a></li>
-
+              <ul class="main-header__navigation-popup-list-wrapper">
+                <ul class="main-header__navigation-popup-list">
+                  <li><a class="main-header__navigation-popup-item" href="#">Виртуальная реальность</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="#">Фитнес-браслеты</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="#">Квадракоптеры</a></li>
+                  <li><a class="main-header__navigation-popup-item">Моноподы для селфи</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="#">Умные часы</a></li>
+                  <li><a class="main-header__navigation-popup-item" href="#">Экшн-камеры</a></li>
+                </ul>
               </ul>
             </li>
-            <div class="main-header__navigation-services-wrapper">
+            <ul class="main-header__navigation-services-wrapper">
               <li><a class="main-header__navigation-header-item main-header__navigation-header-item--delivery" href="#">Доставка</a></li>
               <li><a class="main-header__navigation-header-item main-header__navigation-header-item--warranty" href="#">Гарантия</a></li>
               <li><a class="main-header__navigation-header-item main-header__navigation-header-item--contacts" href="#">Контакты</a></li>
-            </div>
+            </ul>
           </ul>
         </nav>
 
