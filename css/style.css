@@ -162,6 +162,7 @@ input[type="radio"].visually-hidden {
   display: none;
   width: 85px;
   height: 50px;
+  box-sizing: border-box;
   border: 2px solid #000000;
 
   font-family: "OpenSans", Arial, sans-serif;
@@ -231,6 +232,14 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+
+.main-header__site-navigation {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 40px; /* соотносить с отступами у поп-ап меню */
+}
+
 .main-header__navigation-item {
   display: block;
   margin: 0;
@@ -247,7 +256,6 @@ input[type="radio"].visually-hidden {
 
   position: relative;
 }
-
 
 .main-header__navigation-item--user {
   padding-left: 26px;
@@ -367,12 +375,17 @@ input[type="radio"].visually-hidden {
   list-style: none;
 
   justify-content: space-between;
+}
 
+.main-header__site-navigation-list li:first-child {
+  position: relative;
 }
 
 .main-header__navigation-services-wrapper {
   display: flex;
   justify-content: flex-start;
+
+  list-style: none;
 
   width: 500px;
 }
@@ -394,6 +407,24 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.main-header__navigation-header-item--catalog {
+  position: relative;
+}
+
+.main-header__navigation-header-item--catalog::after {
+  content: "";
+
+  width: 16px;
+  height: 16px;
+
+  position: absolute;
+  top: 4px;
+  left: 230px;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23272525' d='M16 7H9V0H7v7H0v2h7v7h2V9h7z'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+
 .main-header__navigation-header-item--warranty {
   display: block;
   width: 225px;
@@ -409,18 +440,50 @@ input[type="radio"].visually-hidden {
   width: 115px;
 }
 
-.main-header__navigation-popup-list {
-  display: flex;
+.main-header__navigation-header-item:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header__navigation-header-item:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.main-header__navigation-popup-list-wrapper {
+  display: none;
   margin: 0 auto;
   padding: 0;
-  padding-top: 29px;
-  padding-bottom: 29px;
+  padding-left: 60px;
+  width: 1100px;
+
+  background-color: #f7e296;
+
+  position: absolute;
+  left: -60px;
+  z-index: 5;
+}
+
+.main-header__navigation-header-item--catalog:hover ~ .main-header__navigation-popup-list-wrapper {
+  display: block;
+}
+
+.main-header__navigation-header-item--catalog > ul:hover .main-header__navigation-popup-list-wrapper{
+  display: block;
+}
+
+
+.main-header__navigation-popup-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  width: 600px;
 
   flex-wrap: wrap;
+  justify-content: flex-start;
 
   list-style: none;
-
-  justify-content: flex-start;
 }
 
 .main-header__navigation-popup-list li:first-child,
@@ -455,6 +518,14 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.main-header__navigation-popup-item:hover {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.main-header__navigation-popup-item:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
 
 /* main */
 
@@ -465,7 +536,15 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
 
+
   position: relative;
+}
+
+.main-slider__under-mask {
+  position: absolute;
+  left: 140px;
+  z-index: -1;
+  line-height: 0;
 }
 
 /* main-slider list, items */
@@ -489,6 +568,10 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   align-items: center;
   width: 560px;
+}
+
+.main-slider__item-img--quadcopter {
+  padding-top: 50px;
 }
 
 .main-slider__item-content {
@@ -516,7 +599,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   letter-spacing: 1.79px;
 
-  color: orange; /* !изменить цвет! */
+  color: #ffffff;
 }
 
 .main-slider__item-header {
@@ -537,7 +620,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-slider__item-header--quadcopter {
-  width: 500px;
+  width: 550px;
 }
 
 .main-slider__item-text {
@@ -1779,6 +1862,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 45px;
 }
 
 .inner-page-header__header {
