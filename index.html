@@ -4,49 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Подложка для верстки и контуры блоков (временно!) -->
-    <!--
-    <style>
-      /*
-      html {
-        background: url('img/device-index.jpg') 50% 0 no-repeat;
-      }
-      body {
-        opacity: 0.5;
-      }
-      */
-      body > * {
-        outline: 2px solid blue;
-      }
-      body > * > * {
-        outline: 2px solid green;
-      }
-      body > * > * > * {
-        outline: 2px solid red;
-      }
-      body > * > * > * > * {
-        outline: 2px solid purple;
-      }
-      body > * > * > * > * > * {
-        outline: 2px solid orangered;
-      }
-      body > * > * > * > * > * > * {
-        outline: 2px solid greenyellow;
-      }
-      body > * > * > * > * > * > * > * {
-        outline: 2px solid lightblue;
-      }
-      body > * > * > * > * > * > * > * > *{
-        outline: 1px dotted red;
-      }
-      body > * > * > * > * > * > * > * > * > *{
-        outline: 1px dotted green;
-      }
-
-    </style>
-    -->
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -61,8 +19,8 @@
         </a>
 
         <div class="main-header__top-menu">
-          <form class="main-header__search-form">
-            <input class="main-header__search-input" type="text" placeholder="Поиск по сайту">
+          <form class="main-header__search-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="main-header__search-input" type="text" value="" placeholder="Поиск по сайту">
             <button class="main-header__search-button" type="submit">Найти</button>
             <span class="main-header__search-line">
               <svg width="440" height="2" viewbox="0 0 440 2" fill="#000000">
@@ -84,8 +42,8 @@
         <nav class="main-header__site-navigation">
           <ul class="main-header__site-navigation-list">
             <li><a class="main-header__navigation-header-item main-header__navigation-header-item--catalog" href="#">Каталог товаров</a>
-              <!-- здесь будет выпадающее меню -->
-              <ul class="main-header__navigation-popup-list-wrapper">
+              <!-- выпадающее меню -->
+              <div class="main-header__navigation-popup-list-wrapper">
                 <ul class="main-header__navigation-popup-list">
                   <li><a class="main-header__navigation-popup-item" href="#">Виртуальная реальность</a></li>
                   <li><a class="main-header__navigation-popup-item" href="#">Фитнес-браслеты</a></li>
@@ -94,13 +52,15 @@
                   <li><a class="main-header__navigation-popup-item" href="#">Умные часы</a></li>
                   <li><a class="main-header__navigation-popup-item" href="#">Экшн-камеры</a></li>
                 </ul>
+              </div>
+            </li>
+            <li>
+              <ul class="main-header__navigation-services-wrapper">
+                <li><a class="main-header__navigation-header-item main-header__navigation-header-item--delivery" href="#">Доставка</a></li>
+                <li><a class="main-header__navigation-header-item main-header__navigation-header-item--warranty" href="#">Гарантия</a></li>
+                <li><a class="main-header__navigation-header-item main-header__navigation-header-item--contacts" href="#">Контакты</a></li>
               </ul>
             </li>
-            <ul class="main-header__navigation-services-wrapper">
-              <li><a class="main-header__navigation-header-item main-header__navigation-header-item--delivery" href="#">Доставка</a></li>
-              <li><a class="main-header__navigation-header-item main-header__navigation-header-item--warranty" href="#">Гарантия</a></li>
-              <li><a class="main-header__navigation-header-item main-header__navigation-header-item--contacts" href="#">Контакты</a></li>
-            </ul>
           </ul>
         </nav>
 
@@ -110,7 +70,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов с оригинальным дизайном - Device</h1>
 
-      <section class="main-slider"> <!-- здесь будет слайдер для избранных товаров -->
+      <section class="main-slider"> <!-- слайдер для избранных товаров -->
         <h2 class="visually-hidden">Избранные товары</h2>
 
         <span class="main-slider__under-mask">
@@ -245,15 +205,16 @@
 
       <section class="services">
         <h2 class="visually-hidden">Предоставляемые сервисные услуги</h2> <!-- здесь будет слайдер для сервисных услуг -->
-
-<!--
-          <div class="services__slider-control">
--->
-          <!-- меню слайдера class="visually-hidden" -->
+          <!-- меню слайдера -->
           <input class="visually-hidden" type="radio" id="service-slider-delivery" name="service-slider-toggle" checked>
           <input class="visually-hidden" type="radio" id="service-slider-warranty" name="service-slider-toggle">
           <input class="visually-hidden" type="radio" id="service-slider-credit" name="service-slider-toggle">
           <div class="service__slider-control-wrapper">
+            <span class="service-slider-control-line">
+              <svg width="7" height="320" viewbox="0 0 7 320" fill="#000000">
+                <rect width="7" height="320" x="0" y="0"/>
+              </svg>
+            </span>
             <div class="services__slider-control-item-wrapper--delivery">
               <label class="service__slider-control-item service__slider-control-item--delivery" for="service-slider-delivery">Доставка</label>
             </div>
@@ -264,30 +225,27 @@
               <label class="service__slider-control-item service__slider-control-item--credit" for="service-slider-credit">Кредит</label>
             </div>
           </div>
-<!--
-        </div>
--->
 
         <ul class="services__list">
           <li class="services__item-wrapper">
             <article class="services__item">
               <h3 class="services__item-header">Доставка</h3>
               <p class="services__item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              <img class="service__item-icon" src="img/services-delivery.svg" width="136" height="164">
+              <img class="service__item-icon" src="img/services-delivery.svg" width="136" height="164" alt="Иконка Доставка">
             </article>
           </li>
           <li class="services__item-wrapper">
             <article class="services__item">
               <h3 class="services__item-header">Гарантия</h3>
               <p class="services__item-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              <img class="service__item-icon" src="img/services-warranty.svg" width="171" height="194">
+              <img class="service__item-icon" src="img/services-warranty.svg" width="171" height="194" alt="Иконка Гарантии">
             </article>
           </li>
           <li class="services__item-wrapper">
             <article class="services__item">
               <h3 class="services__item-header">Кредит</h3>
               <p class="services__item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-              <img class="service__item-icon" src="img/services-credit.svg" width="156" height="186">
+              <img class="service__item-icon" src="img/services-credit.svg" width="156" height="186" alt="Иконка Кредит">
             </article>
           </li>
         </ul>
@@ -344,7 +302,7 @@
                   Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
                 </p>
                 <a class="contact__map-link-wrapper" href="#">
-                  <img class="contacts__map" src="img/main-page_map.jpg" width="560" height="222">
+                  <img class="contacts__map" src="img/main-page_map.jpg" width="560" height="222" alt="Карта с месторасположением">
                 </a>
               </div>
               </div>
@@ -354,7 +312,8 @@
       </section>
 
       <section class="feedback"> <!-- форма обратной связи  -->
-        <form class="feedback-form">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="feedback-form__name-mail-wrapper">
             <p>
               <label class="feedback-form__label" for="feedback-form__input-name">Ваше имя</label>
@@ -379,8 +338,9 @@
       </section>
 
       <section class="map">
+        <h2 class="visually-hidden">Карта с месторасположением</h2>
         <form class="map-form">
-          <iframe class="map-form__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473704!2d37.5274293160995!3d55.68703400452975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1561579184111!5m2!1sru!2sru" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe class="map-form__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473704!2d37.5274293160995!3d55.68703400452975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1561579184111!5m2!1sru!2sru" width="960" height="560" allowfullscreen></iframe>
           <button class="map-form__close" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
               <path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
@@ -400,11 +360,11 @@
           </a>
           <div class="main-footer__navigation-link-wrapper">
             <ul class="main-footer__user-links">
-              <li><a class="main-footer__navigation-item main-footer-navigation-item__user" href="#">Войти</a></li>
+              <li><a class="main-footer__navigation-item main-footer__navigation-item--user" href="#">Войти</a></li>
             </ul>
             <ul class="main-footer__goods-action">
-              <li><a class="main-footer__navigation-item main-footer-navigation-item__compare" href="#">Сравнить</a></li>
-              <li><a class="main-footer__navigation-item main-footer-navigation-item__cart" href="#">Корзина</a></li>
+              <li><a class="main-footer__navigation-item main-footer__navigation-item--compare" href="#">Сравнить</a></li>
+              <li><a class="main-footer__navigation-item main-footer__navigation-item--cart" href="#">Корзина</a></li>
             </ul>
           </div>
         </div>
@@ -464,8 +424,9 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 
-  <script src="js/script.js"></script>
+
 
 </html>
