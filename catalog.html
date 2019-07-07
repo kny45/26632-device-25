@@ -133,10 +133,17 @@
             </span>
             <h3 class="search-filter__form-header-price">Стоимость</h3>
             <div class="search-filter__form-price-slider">
-              здесь будет слайдер для цены - временно
-              <!--
-                здесь будет слайдер для цены
-              -->
+              <div class="search-filter__form-price-slider-controls">
+                <div class="search-filter__form-price-slider-controls-scale">
+                  <div class="search-filter__form-price-slider-controls-range-bar"></div>
+                </div>
+                <div class="search-filter__form-price-slider-controls-toggle search-filter__form-price-slider-controls-toggle--min"></div>
+                <div class="search-filter__form-price-slider-controls-toggle search-filter__form-price-slider-controls-toggle--max"></div>
+              </div>
+              <div class="search-filter__form-price-slider-price-label">
+                <span class="search-filter__form-price-slider-price-label--min">от 0</span>
+                <span class="search-filter__form-price-slider-price-label--max">до 5000</span>
+              </div>
             </div>
             <span class="search-filter__head-line-color">
               <svg width="200" height="2" viewbox="0 0 200 2" fill="#000000">
@@ -145,23 +152,28 @@
             </span>
             <h3 class="search-filter__form-header-color">Цвет</h3>
             <label class="search-filter__color-item">
-              <input type="checkbox" checked>
+              <input class="search-filter__color-item-input" type="checkbox" value="color-black" name="color-black" checked>
+              <span class="search-filter__color-item-box"></span>
               Черный
             </label>
             <label class="search-filter__color-item">
-              <input type="checkbox">
+              <input class="search-filter__color-item-input" type="checkbox" value="color-white" name="color-white">
+              <span class="search-filter__color-item-box"></span>
               Белый
             </label>
             <label class="search-filter__color-item">
-              <input type="checkbox" checked>
+              <input class="search-filter__color-item-input" type="checkbox" value="color-blue" name="color-blue" checked>
+              <span class="search-filter__color-item-box"></span>
               Синий
             </label>
             <label class="search-filter__color-item">
-              <input type="checkbox" checked>
+              <input class="search-filter__color-item-input" type="checkbox" value="color-red" name="color-red" checked>
+              <span class="search-filter__color-item-box"></span>
               Красный
             </label>
-            <label class="search-filter__color-item-last">
-              <input type="checkbox">
+            <label class="search-filter__color-item search-filter__color-item-last">
+              <input class="search-filter__color-item-input" type="checkbox" value="color-pink" name="color-pink">
+              <span class="search-filter__color-item-box"></span>
               Розовый
             </label>
             <span class="search-filter__head-line-bluetooth">
@@ -170,11 +182,13 @@
               </svg>
             </span>
             <h3 class="search-filter__form-header-bluetooth">Bluetooth</h3>
-            <label class="search-filter__form-radio">
-              <input type="radio" name="search-filter-form__bluetooth" value="bluetooth-yes" checked>Есть
+            <label class="search-filter__bt-radio">
+              <input class="search-filter__bt-radio-input" type="radio" name="search-filter-form__bluetooth" value="bluetooth-yes" checked>Есть
+              <span class="search-filter__bt-radio-box"></span>
             </label>
-            <label class="search-filter__form-radio-last">
-              <input type="radio" name="search-filter__form-bluetooth" value="bluetooth-no">Нет
+            <label class="search-filter__bt-radio search-filter__bt-radio-last">
+              <input class="search-filter__bt-radio-input" type="radio" name="search-filter-form__bluetooth" value="bluetooth-no">Нет
+              <span class="search-filter__bt-radio-box"></span>
             </label>
             <button class="search-filter__submit-btn" type="submit">Показать</button>
           </form>
