@@ -71,100 +71,101 @@
       <h1 class="visually-hidden">Интернет-магазин гаджетов с оригинальным дизайном - Device</h1>
 
       <section class="main-slider"> <!-- слайдер для избранных товаров -->
-        <h2 class="visually-hidden">Избранные товары</h2>
+        <div class="main-slider__inner-wrapper">
+          <h2 class="visually-hidden">Избранные товары</h2>
 
-        <span class="main-slider__under-mask">
-          <svg width="1160" height="120" viewbox="0 0 1160 120" fill="#f7e296">
-            <rect width="1160" height="120" x="0" y="0"/>
-          </svg>
-        </span>
+          <span class="main-slider__under-mask">
+            <svg width="1160" height="115" viewbox="0 0 1160 115" fill="#f7e296">
+              <rect width="1160" height="115" x="0" y="0"/>
+            </svg>
+          </span>
 
-        <!-- управление слайдером товаров -->
-        <input class="visually-hidden" type="radio" id="main-slider-monopod" name="main-slider-toggle" checked>
-        <input class="visually-hidden" type="radio" id="main-slider-fitness-bracelet" name="main-slider-toggle">
-        <input class="visually-hidden" type="radio" id="main-slider-quadcopter" name="main-slider-toggle">
-        <div class="main-slider__slider-controls">
-          <label class="main-slider__control-item main-slider__control-item--monopod" for="main-slider-monopod">Монопод</label>
-          <label class="main-slider__control-item main-slider__control-item--fitness-bracelet" for="main-slider-fitness-bracelet">Фитнес-браслет</label>
-          <label class="main-slider__control-item main-slider__control-item--quadcopter" for="main-slider-quadcopter">Квадракоптер</label>
+          <!-- управление слайдером товаров -->
+          <input class="visually-hidden" type="radio" id="main-slider-monopod" name="main-slider-toggle" checked>
+          <input class="visually-hidden" type="radio" id="main-slider-fitness-bracelet" name="main-slider-toggle">
+          <input class="visually-hidden" type="radio" id="main-slider-quadcopter" name="main-slider-toggle">
+          <div class="main-slider__slider-controls">
+            <label class="main-slider__control-item main-slider__control-item--monopod" for="main-slider-monopod">Монопод</label>
+            <label class="main-slider__control-item main-slider__control-item--fitness-bracelet" for="main-slider-fitness-bracelet">Фитнес-браслет</label>
+            <label class="main-slider__control-item main-slider__control-item--quadcopter" for="main-slider-quadcopter">Квадракоптер</label>
+          </div>
+
+          <ul class="main-slider__slider-list">
+            <li class="main-slider__item-wrapper">
+              <article class="main-slider__item">
+                <div class="main-slider__item-img">
+                  <img src="img/slider-1-png.png" width="384" height="486" alt="Селфи-палка"> <!-- картинка товара -->
+                </div>
+                <div class="main-slider__item-content">
+                  <span class="main-slider__item-number-header">01</span>
+                  <h3 class="main-slider__item-header">Делай селфи, как Бен Стиллер!</h3>
+                  <p class="main-slider__item-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <a class="main-slider__item-button">Подробнее</a>
+                  <h4 class="visually-hidden">Основные параметры</h4>
+                  <table class="main-slider__item-table">
+                    <tr class="main-slider__item-table-value">
+                      <td>8,5 м</td>
+                      <td>5 кг</td>
+                      <td>Карбон</td>
+                    </tr>
+                    <tr class="main-slider__item-table-parameter">
+                      <td>Длина палки</td>
+                      <td>Вес палки</td>
+                      <td>Материал</td>
+                    </tr>
+                  </table>
+                </div>
+              </article>
+            </li>
+            <li class="main-slider__item-wrapper">
+              <article class="main-slider__item">
+                <div class="main-slider__item-img">
+                 <img src="img/slider-2-png.png" width="345" height="485" alt="Фитнес-браслет"> <!-- картинка товара -->
+                </div>
+                <div class="main-slider__item-content">
+                  <span class="main-slider__item-number-header">02</span>
+                  <h3 class="main-slider__item-header">Худеем<br>
+                      правильно!</h3>
+                  <p class="main-slider__item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                  <a class="main-slider__item-button">Подробнее</a>
+                  <h4 class="visually-hidden">Основные параметры</h4>
+                  <table class="main-slider__item-table">
+                    <tr class="main-slider__item-table-value">
+                      <td>48 часов</td>
+                    </tr>
+                    <tr class="main-slider__item-table-parameter">
+                      <td>Без подзараядки</td>
+                    </tr>
+                  </table>
+                </div>
+              </article>
+            </li>
+            <li class="main-slider__item-wrapper">
+              <article class="main-slider__item">
+                <div class="main-slider__item-img main-slider__item-img--quadcopter">
+                  <img src="img/slider-3-png.png" width="526" height="334" alt="Квадракоптер"> <!-- картинка товара -->
+                </div>
+                <div class="main-slider__item-content">
+                  <span class="main-slider__item-number-header">03</span>
+                  <h3 class="main-slider__item-header main-slider__item-header--quadcopter">Порхает как бабочка, жалит как пчела!</h3>
+                  <p class="main-slider__item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                  <a class="main-slider__item-button">Подробнее</a>
+                  <h4 class="visually-hidden">Основные параметры</h4>
+                  <table class="main-slider__item-table">
+                    <tr class="main-slider__item-table-value">
+                      <td>800 м</td>
+                      <td>50 м</td>
+                    </tr>
+                    <tr class="main-slider__item-table-parameter">
+                      <td>Радиус полета</td>
+                      <td>Радиус поражения</td>
+                    </tr>
+                  </table>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
-
-        <ul class="main-slider__slider-list">
-          <li class="main-slider__item-wrapper">
-            <article class="main-slider__item">
-              <div class="main-slider__item-img">
-                <img src="img/slider-1-png.png" width="384" height="486" alt="Селфи-палка"> <!-- картинка товара -->
-              </div>
-              <div class="main-slider__item-content">
-                <span class="main-slider__item-number-header">01</span>
-                <h3 class="main-slider__item-header">Делай селфи, как Бен Стиллер!</h3>
-                <p class="main-slider__item-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <a class="main-slider__item-button">Подробнее</a>
-                <h4 class="visually-hidden">Основные параметры</h4>
-                <table class="main-slider__item-table">
-                  <tr class="main-slider__item-table-value">
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr class="main-slider__item-table-parameter">
-                    <td>Длина палки</td>
-                    <td>Вес палки</td>
-                    <td>Материал</td>
-                  </tr>
-                </table>
-              </div>
-            </article>
-          </li>
-          <li class="main-slider__item-wrapper">
-            <article class="main-slider__item">
-              <div class="main-slider__item-img">
-               <img src="img/slider-2-png.png" width="345" height="485" alt="Фитнес-браслет"> <!-- картинка товара -->
-              </div>
-              <div class="main-slider__item-content">
-                <span class="main-slider__item-number-header">02</span>
-                <h3 class="main-slider__item-header">Худеем<br>
-                    правильно!</h3>
-                <p class="main-slider__item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="main-slider__item-button">Подробнее</a>
-                <h4 class="visually-hidden">Основные параметры</h4>
-                <table class="main-slider__item-table">
-                  <tr class="main-slider__item-table-value">
-                    <td>48 часов</td>
-                  </tr>
-                  <tr class="main-slider__item-table-parameter">
-                    <td>Без подзараядки</td>
-                  </tr>
-                </table>
-              </div>
-            </article>
-          </li>
-          <li class="main-slider__item-wrapper">
-            <article class="main-slider__item">
-              <div class="main-slider__item-img main-slider__item-img--quadcopter">
-                <img src="img/slider-3-png.png" width="526" height="334" alt="Квадракоптер"> <!-- картинка товара -->
-              </div>
-              <div class="main-slider__item-content">
-                <span class="main-slider__item-number-header">03</span>
-                <h3 class="main-slider__item-header main-slider__item-header--quadcopter">Порхает как бабочка, жалит как пчела!</h3>
-                <p class="main-slider__item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="main-slider__item-button">Подробнее</a>
-                <h4 class="visually-hidden">Основные параметры</h4>
-                <table class="main-slider__item-table">
-                  <tr class="main-slider__item-table-value">
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr class="main-slider__item-table-parameter">
-                    <td>Радиус полета</td>
-                    <td>Радиус поражения</td>
-                  </tr>
-                </table>
-              </div>
-            </article>
-          </li>
-        </ul>
-
       </section>
 
       <section class="popular-products">
@@ -204,52 +205,55 @@
       </section>
 
       <section class="services">
-        <h2 class="visually-hidden">Предоставляемые сервисные услуги</h2> <!-- здесь будет слайдер для сервисных услуг -->
-          <!-- меню слайдера -->
-          <input class="visually-hidden" type="radio" id="service-slider-delivery" name="service-slider-toggle" checked>
-          <input class="visually-hidden" type="radio" id="service-slider-warranty" name="service-slider-toggle">
-          <input class="visually-hidden" type="radio" id="service-slider-credit" name="service-slider-toggle">
-          <div class="service__slider-control-wrapper">
-            <span class="service-slider-control-line">
-              <svg width="7" height="320" viewbox="0 0 7 320" fill="#000000">
-                <rect width="7" height="320" x="0" y="0"/>
-              </svg>
-            </span>
-            <div class="services__slider-control-item-wrapper--delivery">
-              <label class="service__slider-control-item service__slider-control-item--delivery" for="service-slider-delivery">Доставка</label>
-            </div>
-            <div class="services__slider-control-item-wrapper--warranty">
-              <label class="service__slider-control-item service__slider-control-item--warranty" for="service-slider-warranty">Гарантия</label>
-            </div>
-            <div class="services__slider-control-item-wrapper--credit">
-              <label class="service__slider-control-item service__slider-control-item--credit" for="service-slider-credit">Кредит</label>
-            </div>
-          </div>
+        <div class="services__inner-wrapper">
 
-        <ul class="services__list">
-          <li class="services__item-wrapper">
-            <article class="services__item">
-              <h3 class="services__item-header">Доставка</h3>
-              <p class="services__item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              <img class="service__item-icon" src="img/services-delivery.svg" width="136" height="164" alt="Иконка Доставка">
-            </article>
-          </li>
-          <li class="services__item-wrapper">
-            <article class="services__item">
-              <h3 class="services__item-header">Гарантия</h3>
-              <p class="services__item-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              <img class="service__item-icon" src="img/services-warranty.svg" width="171" height="194" alt="Иконка Гарантии">
-            </article>
-          </li>
-          <li class="services__item-wrapper">
-            <article class="services__item">
-              <h3 class="services__item-header">Кредит</h3>
-              <p class="services__item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-              <img class="service__item-icon" src="img/services-credit.svg" width="156" height="186" alt="Иконка Кредит">
-            </article>
-          </li>
-        </ul>
+          <h2 class="visually-hidden">Предоставляемые сервисные услуги</h2> <!-- здесь будет слайдер для сервисных услуг -->
+            <!-- меню слайдера -->
+            <input class="visually-hidden" type="radio" id="service-slider-delivery" name="service-slider-toggle" checked>
+            <input class="visually-hidden" type="radio" id="service-slider-warranty" name="service-slider-toggle">
+            <input class="visually-hidden" type="radio" id="service-slider-credit" name="service-slider-toggle">
+            <div class="service__slider-control-wrapper">
+              <span class="service-slider-control-line">
+                <svg width="7" height="320" viewbox="0 0 7 320" fill="#000000">
+                  <rect width="7" height="320" x="0" y="0"/>
+                </svg>
+              </span>
+              <div class="services__slider-control-item-wrapper--delivery">
+                <label class="service__slider-control-item service__slider-control-item--delivery" for="service-slider-delivery">Доставка</label>
+              </div>
+              <div class="services__slider-control-item-wrapper--warranty">
+                <label class="service__slider-control-item service__slider-control-item--warranty" for="service-slider-warranty">Гарантия</label>
+              </div>
+              <div class="services__slider-control-item-wrapper--credit">
+                <label class="service__slider-control-item service__slider-control-item--credit" for="service-slider-credit">Кредит</label>
+              </div>
+            </div>
 
+          <ul class="services__list">
+            <li class="services__item-wrapper">
+              <article class="services__item">
+                <h3 class="services__item-header">Доставка</h3>
+                <p class="services__item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <img class="service__item-icon" src="img/services-delivery.svg" width="136" height="164" alt="Иконка Доставка">
+              </article>
+            </li>
+            <li class="services__item-wrapper">
+              <article class="services__item">
+                <h3 class="services__item-header">Гарантия</h3>
+                <p class="services__item-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                <img class="service__item-icon" src="img/services-warranty.svg" width="171" height="194" alt="Иконка Гарантии">
+              </article>
+            </li>
+            <li class="services__item-wrapper">
+              <article class="services__item">
+                <h3 class="services__item-header">Кредит</h3>
+                <p class="services__item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                <img class="service__item-icon" src="img/services-credit.svg" width="156" height="186" alt="Иконка Кредит">
+              </article>
+            </li>
+          </ul>
+
+        </div>
       </section>
 
       <section class="brands">
@@ -388,23 +392,26 @@
                 <rect width="80" height="7" x="0" y="0"/>
               </svg>
             </span>
-            <a class="main-footer__logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="main-footer__logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт разработчика - htmlacademy">
               <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+                <title>Перейти на сайт разработчика - htmlacademy</title>
                 <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
               </svg>
             </a>
           </div>
           <ul class="main-footer__social-buttons-list">
             <li>
-              <a class="main-footer__social-button" href="#">
+              <a class="main-footer__social-button" href="#" aria-label="Девайс на Фейсбуке">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <title>Девайс на fb</title>
                   <path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="main-footer__social-button" href="#">
+              <a class="main-footer__social-button" href="#" aria-label="Девайс в Инстаграме">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <title>Девайс в Instagam</title>
                   <g fill="#FFF">
                     <path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/>
                     <path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/>
@@ -414,8 +421,9 @@
               </a>
             </li>
             <li>
-              <a class="main-footer__social-button" href="#">
+              <a class="main-footer__social-button" href="#" aria-label="Девайс в Твитере">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                  <title>Девайс в Twetter</title>
                   <path fill="#FFF" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/>
                 </svg>
               </a>
@@ -426,7 +434,5 @@
     </footer>
     <script src="js/script.min.js"></script>
   </body>
-
-
 
 </html>
